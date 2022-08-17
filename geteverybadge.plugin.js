@@ -1,6 +1,6 @@
 /**
  * @name GetEveryBadge
- * @version 1.1.4
+ * @version 1.1.5
  * @authorId 492278266065846273
  * @description Applies you all profile badges on Discord.
  * @website https://github.com/Visual9999
@@ -15,10 +15,11 @@ class GetEveryBadge {
         this.initialized = false;
     }
 
-    getName () {return "GetEveryBadge";}
-	getAuthor () {return "Visual#1337";}
-	getVersion () {return "1.1.4";}
-	getDescription () {return "Applies you all profile badges on Discord.";}
+    getName() { return "Get Every Badge"; }
+    getShortName() { return "GetEveryBadge"; }
+    getDescription() { return "Applies you all profile badges on Discord."; }
+    getVersion() { return "1.1.5"; }
+    getAuthor() { return "Visual"; }
 
     getSettingsPanel() {
         return "";
@@ -29,5 +30,6 @@ class GetEveryBadge {
     }
 
     stop() {
+	location.reload();
     }
 }
