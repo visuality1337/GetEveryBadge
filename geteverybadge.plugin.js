@@ -1,6 +1,6 @@
 /**
  * @name GetEveryBadge
- * @version 1.1.1
+ * @version 1.1.2
  * @description Applies you all profile badges on Discord.
  * @website https://github.com/Visual9999
  * @authorLink https://github.com/Visual9999
@@ -16,7 +16,7 @@ class GetEveryBadge {
     getName() { return "Get Every Badge"; }
     getShortName() { return "GetEveryBadge"; }
     getDescription() { return "Applies you all profile badges on Discord."; }
-    getVersion() { return "1.1.1"; }
+    getVersion() { return "1.1.2"; }
     getAuthor() { return "Visual#1337"; }
 
     getSettingsPanel() {
