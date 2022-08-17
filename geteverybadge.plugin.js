@@ -1,23 +1,39 @@
 /**
  * @name GetEveryBadge
- * @version 1.1.2
+ * @version 1.1.3
+ * @authorId 492278266065846273
  * @description Applies you all profile badges on Discord.
  * @website https://github.com/Visual9999
  * @authorLink https://github.com/Visual9999
  * @source https://github.com/Visual9999/GetEveryBadge
  * @updateUrl https://raw.githubusercontent.com/Visual9999/GetEveryBadge/main/geteverybadge.plugin.js
  */
-class GetEveryBadge {
+
+module.exports = (_ => {
+	const config = {
+		"info": {
+			"name": "GetEveryBadge",
+			"author": "Visual#1337",
+			"version": "1.1.3",
+			"description": "Applies you all profile badges on Discord."
+		},
+		"changeLog": {
+			"added": {
+				"Embed JSON": "Code clean-up."
+			}
+		}
+	};
+
+return class {
 
     constructor() {
         this.initialized = false;
     }
 
-    getName() { return "Get Every Badge"; }
-    getShortName() { return "GetEveryBadge"; }
-    getDescription() { return "Applies you all profile badges on Discord."; }
-    getVersion() { return "1.1.2"; }
-    getAuthor() { return "Visual#1337"; }
+    getName () {return config.info.name;}
+	getAuthor () {return config.info.author;}
+	getVersion () {return config.info.version;}
+	getDescription () {return config.info.description;}
 
     getSettingsPanel() {
         return "";
